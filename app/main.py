@@ -1,9 +1,9 @@
-from fastapi import FastAPI
+from fastapi import APIRouter
 from pydantic import BaseModel
 from app.bigram_model import BigramModel
 import spacy
 
-app = FastAPI()
+app = APIRouter()
 
 nlp = spacy.load("en_core_web_md")
 
